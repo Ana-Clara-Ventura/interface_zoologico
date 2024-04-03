@@ -1,25 +1,23 @@
 import './Home.css'
-import Atracao from '../../components/Atracao/Atracao'
-import Navegacao from '../../components/Navegacao/Navegacao'
-import Welcome from '../../components/Welcome/Welcome'
+import Atracao from '../../components/Atracao/Atracao';
+import Welcome from '../../components/Welcome/Welcome';
+import Navegacao from '../../components/Navegacao/Navegacao';
 
-function Home(){
-        
-  const components = [];
-   for (let i = 0; i<=2; i++){
-    components.push(<Atracao key={i}/>)
-   }
+function Home() {
+    const componentes = [];
+    for (let i = 0; i <= 2; i++) {
+        componentes.push(<Atracao key={i} />)
+    }
 
-  return (
-    <>
-      <Navegacao></Navegacao>
-      <Welcome></Welcome>
-      <h1> Atrações </h1>
-      <div className='ctn-atracoes'>
-      {components}
-      </div>
-    </>
-  )
+    return (
+        <>
+            <Navegacao></Navegacao>
+            <Welcome />
+            <div className="ctn-atracoes">
+                {componentes}
+            </div>
+        </>
+    );
 }
 
 export default Home;

@@ -1,11 +1,11 @@
 import Navegacao from '../../components/Navegacao/Navegacao';
 import './Depoimentos.css'
 
-function Depoimentos() {
+function Depoimentos(){
     return(
         <>
-            <Navegacao />
-            <p> Nada aqui ainda </p>
+        <Navegacao />
+        <p>Nada aqui ainda</p>
         </>
     );
 }
