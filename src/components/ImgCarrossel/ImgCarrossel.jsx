@@ -14,7 +14,7 @@ function ImgCarrossel() {
         <div className='ctn-carrossel'>
             <Carousel>
                 {imgCarrossel.map(animal => (
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item interval={3000} key={animal.id}>
                         <img
                             className="d-block w-100"
                             src={animal.src}
