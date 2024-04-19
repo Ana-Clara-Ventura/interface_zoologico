@@ -1,34 +1,29 @@
 [
 	{
-		"id": 0,
 		"index": 1,
 		"src": "./src/assets/animais/animais1.jpg",
 		"caption": "Tucano",
         "text": "Lorem Ipsum"
 	},
 	{
-		"id": 1,
 		"index": 2,
 		"src": "./src/assets/animais/animais2.jpg",
 		"caption": "Matando a sede",
         "text": "Lorem Ipsum"
 	},
     {
-		"id": 2,
 		"index": 3,
 		"src": "./src/assets/animais/animais3.jpg",
 		"caption": "Posando para a foto",
         "text": "Lorem Ipsum"
 	},
     {
-		"id": 3,
 		"index": 4,
 		"src": "./src/assets/animais/animais4.jpg",
 		"caption": "Maurício?",
         "text": "Lorem Ipsum"
 	},
     {
-		"id": 4,
 		"index": 5,
 		"src": "./src/assets/animais/animais5.jpg",
 		"caption": "Zoológico",
