@@ -1,0 +1,26 @@
+.alinhar {
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+
+.tabela {
+    width: 70%;
+}
+
+.tabela th, .tabela td {
+    border: 1px solid; 
+    padding: 8px;
+    text-align: center; 
+}
+
+td{
+    color: rgb(133, 133, 133);
+}
+
+.pagina{
+    height: 85vh;
+}
