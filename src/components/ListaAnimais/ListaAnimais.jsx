@@ -1,6 +1,28 @@
+import { useState } from 'react';
 import './ListaAnimais.css'
+import { useEffect} from 'react';
 
 function ListaAnimais() {
+
+    const [animais,setAnimais] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/listar-aves');
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar servidor');
+                }
+                const listaAnimais = await response.json();
+                setAnimais(listaAnimais);
+            } catch (error) {
+                console.error('Erro: ', error);
+            }
+        }
+
+        fetchData();
+    }, []);
+
 
     return (
         <>
@@ -17,12 +39,19 @@ function ListaAnimais() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Teste</td>
-                        <td>Teste</td>
-                        <td>Teste</td>
-                        <td>Teste</td>
+                {animais.length > 0 ? (
+                    animais.map((animal) => (
+                        <tr>
+                        <td>{animal.nomeanimal}</td>
+                        <td>{animal.idadeanimal}</td>
+                        <td>{animal.generoanimal}</td>
+                        <td>{animal.envergaduraanimal}</td>
                     </tr>
+                    )
+                )): (
+                    <p>Carregando... Verifique se o servidor está funcionando</p>
+                )}
+                    
                 </tbody>
             </table>
             </div>
